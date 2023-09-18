@@ -17,5 +17,12 @@
         <br>
         <button type="submit">Upload</button>
     </form>
+    <script>
+        $("#documentUploadForm").submit(function (e) {
+        e.preventDefault();
+        var formData = new FormData(this);
+        return formData;
+});   
+    </script>
 </body>
 </html>
