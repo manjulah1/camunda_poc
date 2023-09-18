@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document Upload Form</title>
+</head>
+<body>
+    <h2>Upload Documents</h2>
+    <form id="documentUploadForm" enctype="multipart/form-data">
+        <label for="documentType">Document Type:</label>
+        <select id="documentType" name="documentType">
+            <option value="identityProof">Identity Proof</option>
+            <option value="addressProof">Address Proof</option>
+            <option value="nriDocuments">NRI Documents</option>
+        </select>
+        <br>
+        <input type="file" id="document" name="document" accept=".pdf, .doc, .docx">
+        <br>
+        <button type="submit">Upload</button>
+    </form>
+</body>
+</html>
